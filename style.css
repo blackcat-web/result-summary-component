@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+   min-height: 100vh;
+   max-height: 200vh; 
+   /* border: 2px solid red; */
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   column-gap: 20px;
+   
+}
+.boxes{
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid rebeccapurple; */
+    border-radius: 20px;
+}
+.box1{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border: none;
+}
+.box1> p{
+    font-size: 22px;
+}
+.box1 .chat{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: linear-gradient( rgb(2, 2, 117),blue);
+}
+.chat h3{
+    font-size: 35px;
+}
+.box1 .message{
+    width: 80%;
+}
+
+.box2{
+    padding: 10px 0px;
+    box-shadow:  5px 6px 17px rgba(0,0,0,0.3);
+    
+}
+.box2 h3{
+    margin: 10px 0px 0px 20px;
+    color: #03032b;
+}
+.lessColor{
+    color: gray;  
+}
+.box2 .list-box {
+    list-style-type: none;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box2 .list-box .list-item{
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;  
+    font-weight: 500; 
+}
+.list-item:nth-child(1){
+    background-color: rgba(255, 0, 0, 0.062);
+    color: red;
+    
+}
+.list-item:nth-child(2){
+    background-color: rgba(255, 166, 0, 0.151);
+    color: orange;
+}
+.list-item:nth-child(3){
+    background-color: rgba(144, 238, 144, 0.274);
+    color: green;
+    
+}
+.list-item:nth-child(4){
+    background-color: rgba(173, 216, 230, 0.26);
+    color: darkblue;
+}
+
+.btn-sn{
+    background-color: darkblue;
+    color: white;
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.btn-sn:hover{
+    background-color: blue;
+    cursor: pointer;
+}
